@@ -1,2 +1,2 @@
 # freecodecamp
-My repository for all are code camp codes
+My repository for all code camp codes
