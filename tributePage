@@ -1,0 +1,56 @@
+<html>
+
+<head>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="well">
+      <div class="row">
+        <h1 class="text-center">Narendra Modi</h1>
+        <h3 class="text-center "><i>Patriot, visionary and a ruthless administrator</h3>
+      </div>
+      <div class="row">
+        <div class="well wellBg">
+          <figure class="figure">
+            <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Narendra_Damodardas_Modi.jpg">
+            <figcaption class="figure-         caption text-center">Narendra Modi is the most energetic Prime Minister India has seen. </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <h3>Timeline of Narendra Modi as the Indian Prime Minister: </h3>
+        <ul>
+          <li><b>May 2014 -</b> Narendra Damodardas Modi sworn in as 15th Prime Minister of India at the Rastrapati Bhawan, New Delhi. </li>
+          <li><b>June 2014 -</b> Modi made his first foreign visit to Bhutan following an invitation by King Jigme Khesar Namgyel Wangchuck and Tobgay. </li>
+          <li><b>July 2014 -</b> He visited Brazil for his first multilateral visit, the 6th BRICS summit was held at the north-eastern beach city of Fortaleza.</li>
+          <li><b>August 2014 -</b> The Pradhan Mantri Jan Dhan Yojana was formally launched.</li>
+          <li><b>September 2014 -</b> Trip by Modi to Japan. He met Mr. Shinzo Abe meet at Akasaka Palace, in Tokyo, Japan.</li>
+          <li><b>October 2014 -</b> PM launches Swachh Bharat Abhiyaan; initiates cleanliness drive at Valmiki Basti, New Delhi.</li>
+          <li><b>May 2015 -</b> Modi launches Jan Suraksha Schemes.</li>
+          <li><b>June 2015 -</b> 1st Yoga Day Celebrated, led by PM Narendra Modi in New Delhi. This gathering was held at Raj Path, New Delhi, India.</li>
+          <li><b>July 2015 -</b> Trip to Russia to attend BRICS and SCO summit in Ufa, Russia.</li>
+          <li><b>August 2015 -</b> Gave historical speech from Lal Quila on the day of Independence.</li>
+        </ul>
+      </div>
+      <blockquote>
+        <p> "Determined to help more Indians follow in his path, he's laid out an ambitious vision to reduce extreme poverty, improve education, empower women and girls and unleash India's true economic potential while confronting climate change."</p>
+        <footer>Barack Obama <cite title="U.S. President">(U.S. President)</cite></footer>
+      </blockquote>
+      <div class="row">
+        <h3>If you have time, you should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/Timeline_of_prime_ministership_of_Narendra_Modi">wikipedia entry.</a></h3>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
