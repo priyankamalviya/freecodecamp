@@ -1,0 +1,17 @@
+function rot13(str) { // LBH QVQ VG!
+  
+    return str.split('')
+    .map.call(str, function(char) {
+     a= char.charCodeAt(0);
+      if (a < 65 || a > 90) {
+        return String.fromCharCode(a);  
+      }
+      else if (a < 78) {
+        return String.fromCharCode(a + 13);
+      }
+      return String.fromCharCode(a - 13);
+    }).join('');
+}
+
+// Change the inputs below to test
+rot13("SERR PBQR PNZC");
