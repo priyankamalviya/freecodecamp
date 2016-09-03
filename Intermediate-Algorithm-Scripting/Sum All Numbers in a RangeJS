@@ -1,0 +1,11 @@
+function sumAll(arr) {
+  var big=Math.max(arr[0],arr[1]);
+  var small=Math.min(arr[0],arr[1]);
+  var sum=0;
+  for(var i=small;i<=big;i++){
+   sum+=i;
+  }
+  return sum;
+}
+ 
+sumAll([1, 4]);
