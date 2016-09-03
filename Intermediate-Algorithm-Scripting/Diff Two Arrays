@@ -1,0 +1,29 @@
+
+function diffArray(arr1, arr2) {
+ var temp = [], diff = [];
+
+    for (var i = 0; i < arr1.length; i++) {
+        temp[arr1[i]] = arr1[i];
+    }
+
+    for (var j = 0; j < arr2.length; j++) {
+        if (temp[arr2[j]]) {
+            delete temp[arr2[j]];
+        } else {
+            temp[arr2[j]] = arr2[j];
+        }
+    }
+
+    for (var k in temp) {
+      if(typeof(temp[k])==='string'){diff.push(k);
+                                 }
+      else
+        diff.push(parseInt(k));
+       
+    }
+    
+    return diff;
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+
