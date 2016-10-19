@@ -1,0 +1,29 @@
+function whatIsInAName(collection, source) {
+  // What's in a name?
+  var arr = [];
+  // Only change code below this line
+  
+//    var len=collection.length;
+//   for(var i=0;i<len;i++){
+//     if(collection[i].hasOwnProperty('last')){
+//       if(collection[i].last=="Capulet"){
+//         arr=[collection[i]];
+//       }
+//     }
+//   }
+  var srcKeys = Object.keys(source);
+
+  // filter the collection
+  return collection.filter(function (obj) {
+    for(var i = 0; i < srcKeys.length; i++) {
+      if(!obj.hasOwnProperty(srcKeys[i]) || obj[srcKeys[i]] !== source[srcKeys[i]]) {
+        return false;
+      }
+    }
+    return true;
+  });
+}
+
+  // Only change code above this line
+whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+
