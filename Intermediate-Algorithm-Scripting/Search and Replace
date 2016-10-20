@@ -1,0 +1,11 @@
+function myReplace(str, before, after) {
+  var index = str.indexOf(before);
+  if( str[index] === str[index].toUpperCase() ){
+    after = after.charAt(0).toUpperCase() + after.slice(1);
+  }
+  var replace1=str.replace(before, after);
+   return replace1;   
+}
+
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+//myReplace("His name is Tom", "Tom", "john");
