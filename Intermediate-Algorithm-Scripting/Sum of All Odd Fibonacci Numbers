@@ -1,0 +1,13 @@
+function sumFibs(num) {
+  var prev =0, current= 1, sum = 0 ;
+  while(current <= num){
+    if(current % 2 ===1){
+      sum=sum+current;
+    }
+  current = current+prev;
+  prev=current - prev;
+  }
+  return sum;
+}
+
+sumFibs(4);
