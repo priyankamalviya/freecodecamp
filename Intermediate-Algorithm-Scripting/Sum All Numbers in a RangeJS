@@ -9,3 +9,38 @@ function sumAll(arr) {
 }
  
 sumAll([1, 4]);
+
+
+
+
+
+/*****************/* Version: 2 Date: July 4,2017*/********************/
+
+function sumAll(arr) {
+
+  
+  var max, min, sum;
+  
+   max = Math.max.apply(null, arr);
+  
+   min = Math.min.apply(null, arr);
+  
+  newArr = [];
+  while(min !== max){
+    newArr.push(min);
+    min++;
+  }
+  newArr.push(max);
+ 
+  
+  var result = newArr.reduce(function(sum, value){
+    return sum + value;
+  });
+  
+ 
+  return result;
+}
+
+sumAll([1, 4]);
+
+/****************/* Version: 2 Date: July 4,2017*/*********************/
