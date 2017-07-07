@@ -27,3 +27,24 @@ function diffArray(arr1, arr2) {
 
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 
+
+
+/*version 2: July 6th, 2017*/
+
+/*esversion: 6*/
+function diffArray(arr1, arr2) {
+  var newArr = [];
+  // Same, same; but different.
+  
+  /* step1. filter unique items from arr1. 
+     step2. filter unique items from arr2
+     step3. concat arr1 unique items with arr2 unique items*/
+     
+  newArr = arr1.filter(item => arr2.indexOf(item) == -1).concat(arr2.filter(item => arr1.indexOf(item) == -1));
+  return newArr;
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+
+
+
