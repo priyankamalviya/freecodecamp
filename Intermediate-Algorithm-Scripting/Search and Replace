@@ -9,3 +9,24 @@ function myReplace(str, before, after) {
 
 myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
 //myReplace("His name is Tom", "Tom", "john");
+
+
+/* version: 2 July 8th, 2017*/
+
+/*esversion: 6*/
+function myReplace(str, before, after) {
+  let arr = str.split(' ');
+  for(let i=0; i< arr.length; i++){
+    if(arr[i] === before){
+      console.log('before:',arr[i]);
+      if(before[0] === before[0].toUpperCase()){
+        after = after[0].toUpperCase() + after.slice(1);
+        console.log('uppercase after:',after);
+      }
+      arr[i] = after;
+    } 
+  }
+  return arr.join(' ');
+}
+
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
