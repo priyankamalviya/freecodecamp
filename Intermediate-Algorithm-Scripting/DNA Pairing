@@ -28,3 +28,29 @@ function pairElement(str) {
   return paired;
 }
 pairElement("GCG");
+
+
+/* version: 2 July 8, 2017 --same strategy :D --*/
+
+function pairElement(str) {
+  let arr = str.split('');
+  let newArr = [];
+  for(let item = 0; item< arr.length; item++)
+    {
+    if(arr[item] === 'A'){
+      newArr.push([arr[item], 'T']);
+    }
+    else if(arr[item] === 'T'){
+      newArr.push([arr[item], 'A']);
+    }
+    else if(arr[item] === 'C'){
+      newArr.push([arr[item], 'G']);
+    }
+    else if(arr[item] === 'G'){
+      newArr.push([arr[item], 'C']);
+    }
+  }
+  return newArr;
+}
+
+pairElement("GCG");
