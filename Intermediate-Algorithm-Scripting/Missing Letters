@@ -17,3 +17,20 @@ function fearNotLetter(str) {
 
 // test here
 fearNotLetter("abce");
+
+
+/* version: 2 July 8, 2017 */
+
+
+function fearNotLetter(str) {
+
+  for(let i = 0; i< str.length; i++){
+    if((str.charCodeAt(i+1)-str.charCodeAt(i)) ===1){
+       return undefined;
+    } 
+   return String.fromCharCode(str.charCodeAt(i)+1);
+  }
+}
+
+fearNotLetter("abce");
+
