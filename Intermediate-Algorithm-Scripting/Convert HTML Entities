@@ -6,3 +6,31 @@ return str;
 
 // test here
 convertHTML("Dolce & Gabbana");
+
+
+
+/* version 2: July 11th, 2017*/
+
+function convertHTML(str) {
+  // &colon;&rpar;
+  htmlEntities={
+    '&':'&amp;',
+    '<':'&lt;',
+    '>':'&gt;',
+    '\"':'&quot;',
+    '\'':"&apos;"
+  };
+  
+  /* step 1. split the string into an array. 
+     step 2. Map through each item in the array.
+     step 3. Test if any character is one of the entities described above in htmlEntities list. If any present, return value of that key, else return the key alone. 
+     step 4. Join the array back to form string*/
+  
+  let temp = str.split('').map((item) => {return htmlEntities[item] || item;
+  }).join('');
+  
+  return temp;
+}
+
+convertHTML("Dolce & Gabbana");
+
