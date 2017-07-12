@@ -18,7 +18,7 @@ spinalCase('This Is Spinal Tap');
 
 function spinalCase(str) {
   
-  /* The below statement looks for lowercase followed by uppercase letters and adds a pace between them*/
+  /* The below statement looks for lowercase followed by uppercase letters and adds a space between them*/
   str = str.replace(/([a-z])([A-Z])/g, '$1 $2');
   
   
