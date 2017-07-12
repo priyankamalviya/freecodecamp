@@ -11,3 +11,22 @@ function spinalCase(str) {
 
 // test here
 spinalCase('This Is Spinal Tap');
+
+
+/* version: 2, July 12, 2017 */
+
+
+function spinalCase(str) {
+  
+  /* The below statement looks for lowercase followed by uppercase letters and adds a pace between them*/
+  str = str.replace(/([a-z])([A-Z])/g, '$1 $2');
+  
+  
+  /* the regex looks for a space or '_' and replaces either one of them with a hyphen . Following this, the string is converted to lower case */
+  str = str.replace(/ |_/g, '-').toLowerCase();
+  
+  return str;  
+}
+
+spinalCase('AllThe-small Things');
+
