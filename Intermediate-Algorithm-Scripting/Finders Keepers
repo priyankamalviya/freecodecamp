@@ -5,3 +5,25 @@ function findElement(arr, func) {
 }
 
 findElement([1, 2, 3, 4], function(num){ return num % 2 === 0; });
+
+
+
+
+/* version 2: July 13, 2017 */
+
+
+function findElement(arr, func) {
+  /* filters the array based on the condition provided */
+  let num;
+  
+  for(let i =0; i< arr.length; i++){
+    if(func(arr[i])){
+      num = arr[i];
+       return num;
+    }  
+  }
+  return num;
+}
+
+findElement([1, 2, 3, 4], function(num){ return num % 2 === 0; });
+
