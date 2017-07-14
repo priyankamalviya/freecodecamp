@@ -10,6 +10,20 @@ function dropElements(arr, func) {
   }
   return arr;
 }
-
 // test here
 dropElements([1, 2, 3, 4], function(n) {return n >= 3;});
+
+
+/* version 2: July 14, 2017 */
+
+function dropElements(arr, func) {
+  // Drop them elements.
+  
+  while(arr.length > 0 && !func(arr[0])){
+    arr.shift();
+  }
+  return arr;
+}
+
+dropElements([1, 2, 3], function(n) {return n < 3; });
+
