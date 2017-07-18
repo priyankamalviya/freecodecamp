@@ -18,3 +18,17 @@ function steamrollArray(arr) {
 
 // test here
 steamrollArray([1, [2], [3, [[4]]]]);
+
+
+/* version:2 July 17, 2017 */
+
+/* 'esversion:6' */
+function flattenArray(arr) {
+  //console.log(...arr);
+  let result = [].concat(...arr);
+  //console.log(result);
+  //The some() method tests whether some element in the array passes the test implemented by the provided function.
+  return result.some(Array.isArray) ? flattenArray(result) : result; 
+}
+
+console.log(flattenArray([1, [2], [3, [[4]]]]));
