@@ -1,0 +1,30 @@
+
+function sym(args) {
+   
+  // get the different elements in each array and concatenate them
+  let getDiff = function(arr1, arr2){
+    
+    function filterArrays(arr1, arr2){
+    return arr1.filter(function(item){
+      return arr2.indexOf(item) === -1;
+    });    
+  }
+  return filterArrays(arr1, arr2).concat(filterArrays(arr2, arr1));
+  };
+  
+  // convert the arguments passed into arrays
+  args = Array.prototype.slice.call(arguments);
+  
+  //reduce all arguments getting difference of them
+  let reducedArr = args.reduce(getDiff, []);
+  
+  // clear out redundant items in the array
+  //console.log(reducedArr);
+  var unique = reducedArr.filter(function(elem, index, self) {
+    return index === self.indexOf(elem);
+    });
+  return unique;
+  
+}
+
+sym([1, 2, 3], [5, 2, 1, 4]);
